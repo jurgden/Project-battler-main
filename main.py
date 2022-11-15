@@ -2,6 +2,8 @@ import logging as logg
 import sys 
 import random as rnd
 
+
+# Below is our logger
 logger = logg.getLogger(__name__)
 formatter = logg.Formatter('[%(asctime)s] {%(levelname)s} %(name)s: #%(lineno)d - %(message)s')
 stream_handler = logg.StreamHandler(sys.stdout)
@@ -11,7 +13,7 @@ logger.addHandler(file_handler)
 stream_handler.setFormatter(formatter)
 file_handler.setFormatter(formatter)
 logger.setLevel(10)
-
+# Here is an example 
 def equation(a, b, c):
   obj = (a * a) + (b * b) / c
   return logger.info(obj)
