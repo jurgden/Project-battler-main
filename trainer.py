@@ -6,7 +6,7 @@ from logger import logger
 class Trainer():
   def __init__(self, name, *mons):
     self.name = name
-    self.mons = mons
+    self.mons = [mons[0], mons[1]]
 
 
   def battle(self, enemy):
@@ -22,6 +22,6 @@ class Trainer():
 
 
 # Instansiating or Trainer Class
-trainerX = Trainer('James', 'pikachu', 'machamp')
-trainerY = Trainer('Carluna', 'wigglytuff', 'charmander')
-trainerX.battle(trainerY)
+# trainerX = Trainer('James', 'pikachu', 'machamp')
+# trainerY = Trainer('Carluna', 'wigglytuff', 'charmander')
+# trainerX.battle(trainerY)

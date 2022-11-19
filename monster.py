@@ -1,8 +1,9 @@
 # This File will contain all Monster Class methods, information and properties. 
 
 class Monster():
-  def __init__(self, name, HP, ATK, DEF, SPD, is_ko=False):
+  def __init__(self, name, id_num, HP, ATK, DEF, SPD, is_ko=False):
     self.name = name
+    self.id_num = id_num
     self.HP = HP
     self.ATK = ATK
     self.DEF = DEF
@@ -10,9 +11,13 @@ class Monster():
     self.is_ko = is_ko
 
 # Lets keep our instantiated monsters together in this file so that it will be simply accessible and more easily imported to our other files.
-pikachu = Monster('pika', 30, 50, 200, 1000) 
-togepi = Monster('dildo', 20, 100, 200, 1000)
-diglet = Monster('plug', 10, 200, 200, 1000)
+bulbasaur = Monster('bulbasaur','#001', 45, 49, 49, 45) 
+charmander = Monster('charmander', '#004', 39, 52, 43, 65)
+squirtle = Monster('squirtle', '#007', 44, 48, 65, 43)
 
-# THIS IS AN ACCESSIBLE LIST OF ALL OUR CURRENTLY INSTANTIATED MONSTERS.
-pokemon_list = [pikachu, togepi, diglet]
+
+# THIS IS AN ACCESSIBLE LIST OF ALL OUR CURRENT MONSTER NAMES.
+pokemon_names_list = [bulbasaur.name, charmander.name, squirtle.name]
+
+# This is an accessible list of all of our instantiated classes. 
+instantiated_mons_list = [bulbasaur, charmander, squirtle]

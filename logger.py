@@ -4,7 +4,7 @@ import sys
 
  
 logger = logg.getLogger(__name__)
-formatter_file = logg.Formatter('[%(asctime)s] {%(levelname)s} %(name)s: #%(lineno)d - %(message)s')
+formatter_file = logg.Formatter('[%(asctime)s] {%(levelname)s} %(name)s: #%(lineno)d - \n%(message)s')
 formatter_stream = logg.Formatter('{%(levelname)s} - %(message)s')
 file_handler = logg.FileHandler('monster.log')
 stream_handler = logg.StreamHandler(sys.stdout)
