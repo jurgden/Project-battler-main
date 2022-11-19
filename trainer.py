@@ -22,6 +22,6 @@ class Trainer():
 
 
 # Instansiating or Trainer Class
-trainerX = Trainer('James', 'Pikachu', 'Machamp')
-trainerY = Trainer('Carluna', 'Wigglytuff', 'Charmander')
+trainerX = Trainer('James', 'pikachu', 'machamp')
+trainerY = Trainer('Carluna', 'wigglytuff', 'charmander')
 trainerX.battle(trainerY)
