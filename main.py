@@ -1,3 +1,4 @@
+# This file will constitute our runtime enviroment. All of our variable and program structure will be put together and then run through this file. 
 import random
 from monster import Monster
 from move import Move

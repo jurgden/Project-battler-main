@@ -1,0 +1,1 @@
+# This File will hold the entire battle functionality and connect the modules together in a way that matches the flow of battle we would like to achieve. Refer to JJs flow chart for more information. 
