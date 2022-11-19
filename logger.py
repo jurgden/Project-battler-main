@@ -1,7 +1,8 @@
+# This File holds all of our logger formatting and then our logger object itself and output handlers.
 import logging as logg
 import sys 
 
-# Below is our logger
+ 
 logger = logg.getLogger(__name__)
 formatter_file = logg.Formatter('[%(asctime)s] {%(levelname)s} %(name)s: #%(lineno)d - %(message)s')
 formatter_stream = logg.Formatter('{%(levelname)s} - %(message)s')

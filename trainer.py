@@ -1,4 +1,7 @@
-import logger
+# This File will contain all Trainer class methods , information and properties.
+from logger import logger
+
+ 
 
 class Trainer():
   def __init__(self, name, *mons):
@@ -7,8 +10,10 @@ class Trainer():
 
 
   def battle(self, enemy):
+    logger.info(f'{self.name} is in battle against {enemy.name}!')
     mon_selec = input(f'Which on would you like to use? {self.mons}')
-    return logger.info(mon_selec)
+    logger.info(f"You chose {mon_selec}!")
+    logger.info(f'Your {mon_selec} has a HP of ')
 
 
 
@@ -18,4 +23,5 @@ class Trainer():
 
 # Instansiating or Trainer Class
 trainerX = Trainer('James', 'Pikachu', 'Machamp')
-trainerX.battle('JJ')
+trainerY = Trainer('Carluna', 'Wigglytuff', 'Charmander')
+trainerX.battle(trainerY)
